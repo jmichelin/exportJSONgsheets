@@ -4,23 +4,6 @@ function DeleteActiveSheet() {
   var spreadsheet = SpreadsheetApp.getActive();
   spreadsheet.deleteActiveSheet();
 };
-
-function myFunction2() {
-  var values = SpreadsheetApp.getActive()
-    .getSheetByName('Sheet1')
-    .getDataRange()
-    .getValues();
-  if (
-    values.slice(2).some(function(row) {
-      row[1] === '' || str === null;
-    })
-  )
-    throw new Error(
-      'Please enter a information in Row 3 before submitting an email'
-    );
-  // Do what you want if the values are valid.
-}
-
 */
 
 
